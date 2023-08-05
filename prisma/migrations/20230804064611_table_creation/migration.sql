@@ -1,0 +1,9 @@
+-- AlterTable
+ALTER TABLE "Comic" ALTER COLUMN "authors" DROP NOT NULL,
+ALTER COLUMN "status" DROP NOT NULL,
+ALTER COLUMN "other_names" DROP NOT NULL,
+ALTER COLUMN "description" DROP NOT NULL;
+
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "level" SET DEFAULT 0,
+ALTER COLUMN "avatarUrl" DROP NOT NULL;
